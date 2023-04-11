@@ -23,6 +23,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let bundleURL = Bundle.main.bundleURL
 
         webView.loadHTMLString(("<html><head></head><body><h1>ABCDEFGHIJKLMNOP</h1></body></html>"), baseURL: bundleURL)
+        
+        // Manually adding <link rel=\"stylesheet\" type=\"text/css\" href=\"markup.css\"> applies the styling from markup.css
 //        webView.loadHTMLString(("<html><head><link rel=\"stylesheet\" type=\"text/css\" href=\"markup.css\"></head><body><h1>ABCDEFGHIJKLMNOP</h1></body></html>"), baseURL: bundleURL)
         
     }
